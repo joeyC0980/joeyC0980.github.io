@@ -1,0 +1,189 @@
+html {
+    background:url("indoor-basketball-court-background_753213-36.webp") no-repeat center fixed ;
+    margin-top: 0;
+    /* background-size:3000px; */
+    /* max-width:3000px ;  
+    max-height:3000px ;  
+    background-image : url("indoor-basketball-court-background_753213-36.webp") */
+
+}
+
+/* @font-face {
+    font-family:curly ;
+    src: url();
+}
+ h1 {
+    font-size: 15px;
+
+ } */
+
+
+.selections {
+    display:flex;
+    justify-content: center; 
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top:2px ;
+    margin-bottom: 2px;
+}
+.selection1:hover {
+    transform: scale(1.4);
+}
+.selection2:hover {
+    transform: scale(1.4);
+}
+.selection3:hover {
+    transform: scale(1.4);
+}
+
+.selection1 {
+    background-color: rgb(240, 131, 149);
+    cursor: pointer;
+    font-size: 2.5rem;
+    border-radius:55%;
+}
+.selection2 {
+    background-color: gold;
+    cursor: pointer;
+    font-size: 2.5rem;
+    border-radius:55%
+}
+.selection3 {
+    background-color:rgb(156, 122, 37);
+    cursor: pointer;
+    font-size: 2.5rem;
+    border-radius:55%
+}
+
+
+
+button {
+    cursor: pointer;
+    font-size:15px;
+    padding: 12px;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top:2px ;
+    margin-bottom: 2px;
+    background-color: rgb(232, 153, 56);
+    color:rgb(71, 98, 166)
+      
+}
+.michaelBtn {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    max-width: 400px;
+    max-height: 280px;
+}
+
+.georgeBtn {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    max-width: 400px;
+    max-height: 280px;
+}
+
+.michaelImg {
+    size :25px;
+
+}
+.georgeImg {
+    size :60px;
+
+}
+.michaelScore {
+    font-size:25px;
+    font-weight: bold;
+    color:rgb(45, 58, 157)
+
+}
+.georgeScore {
+    font-size:25px;
+    font-weight: bold;
+    color:rgb(45, 58, 157)
+
+}
+
+.btn-size {
+    max-width: 30px;
+    max-height: 15px;
+}
+
+.hitBtn {
+    font-family: 'Courier New', Courier, monospace;
+    border-radius:30%;
+    color:bisque;
+    background-color: black;
+}
+
+.scoreBtn {
+    font-size: 0.5 rem;
+    color: black
+   
+
+
+}
+    /* font-weight: bold; */
+   
+
+.scoreBtn:hover {
+ 
+    background-color:rgb(219, 239, 114);
+    transition: 0.3s;
+}
+
+.restartBtn{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius:50%
+
+}
+.restartBtn:hover {
+    background-color:rgb(238, 163, 244);
+    transition: 0.2s;
+
+}
+.bar1 {
+    height: 50px;
+    width: 30%;
+}
+.bar2 {
+    height: 50px;
+    width: 30%;
+}
+.bar3 {
+    height: 50px;
+    width: 30%;
+}
+
+.bar4 {
+    height: 50px;
+    width: 30%;
+}
+
+
+.x {
+    animation: x 10s linear infinite alternate;
+  }
+  
+  .y {
+    animation: y 7s linear infinite alternate;
+    max-width: 150px;
+    max-height: 150px;
+    
+  }
+  
+  @keyframes x {
+    100% {
+      transform: translateX( calc(85vw) );
+    }
+  }
+  
+  @keyframes y {
+    100% {
+      transform: translateY( calc(85vh ) );
+    }
+  }
+
+
+
