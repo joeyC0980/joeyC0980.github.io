@@ -1,18 +1,9 @@
 
 
-Hey everyone, welcome to my game  : 
-My game is called: Two-player basketball game. 
+Hey everyone, welcome to my project 1  : Two-player basketball game. 
 
-1. Let me introduce my interface first : 
-It’s a button based wed game. each button has its tricks. 
+How to play: By randomly choose "flower","basketball" or "gold medal" you are selecting a randomly chance to beat your component.By default,basketball beats Gold medal; flower beats basketball;gold medal beats Flower. Take turns to choose. Whoever has score increase to 5 wins . Then click Restart button.
 
-
-2. let’s try to play this game : 
-Two players play, and each player picks a character for this game. By randomly clicking the flower, gold medal, or basketball button to play, If the character you choose has an increment score, you win and can play as many times as you want. Hit the restart button to restart the game. 
+Enjoy the game ! 
 
 
-
-3. My code : 
-HTML 
-CSS 
-Java script 
