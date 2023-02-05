@@ -55,8 +55,6 @@ html {
     border-radius:55%
 }
 
-
-
 button {
     cursor: pointer;
     font-size:15px;
@@ -127,7 +125,6 @@ button {
    
 
 .scoreBtn:hover {
- 
     background-color:rgb(219, 239, 114);
     transition: 0.3s;
 }

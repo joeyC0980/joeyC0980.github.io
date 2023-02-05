@@ -6,9 +6,11 @@ prompt("Who are you choosing today ? Michael or George?")// type your name or an
 //// make all the button connected !! 
 const michaelBtn = document.getElementById("michaelBtn")
 const georgeBtn = document.getElementById("georgeBtn")
-const restartBtn = document.getElementById("restartBtn")
+
 const scoreBtn = document.getElementById("scoreBtn")
 const hitBtn = document.getElementById("hitBtn")
+
+// document,addEventListener("DOMContentLoaded",function() {
 
 michaelBtn.addEventListener("mouseover", function() {
  alert ("Hi,I am Michael!")
@@ -23,18 +25,27 @@ hitBtn.addEventListener("click", function() {
     alert("Player Instructions: Please click any of the flower,gold medal or basketball buttons to win your conponent.")
     });
 
-    
-restartBtn.addEventListener("click", () => {
-    function restart(){
-            michaelScoreSpan.innerText=0;
-            georgeScoreSpan.innerText=0;
+    document.addEventListener("DOMContentLoaded",() =>{
+    //const restart = document.getElementById("reStartBtn")
+const restart = document.getElementById("reStartBtn")   
+const michaelScoreSpan = document.querySelector("[data-michael-score]")
+const georgeScoreSpan = document.querySelector("[data-george-score]")
+
+restart.addEventListener("click", () => {
+  
+                     michaelScoreSpan.innerHTML=0 ;
+                     georgeScoreSpan.innerHTML =0
+           
+            })
             
-    }
-});
+        })
+
 
 scoreBtn.addEventListener("click", () => {
     console.log("Your score")
    });
+
+// })
 
 
 
@@ -79,33 +90,45 @@ function makeSelection(selection) {
     if(georgeWiner) incrementScore(georgeScoreSpan)
 }
 
+function incrementScore(scoreSpan) {
+   // for(let i=0;i <=10;i++){
+    let score = parseInt(scoreSpan.innerText);
+    if(score <= 5){
+    score +=1;
+    scoreSpan.innerText = score;
+    if(score ===5) {
+        alert("HEY ! You are the winner.You can now restart the game !")}
+    }
+}
+//}}
+
 function randomSelection() {
     const randomIndex = Math.floor(Math.random()* SELECTIONS.length)
     return SELECTIONS[randomIndex]
 }
 
-function incrementScore(scoreSpan) {
-    for(let i=0;i <=10;i++){
-    let score = parseInt(scoreSpan.innerText);
-    if(score < 10){
-    score +=1;
-    scoreSpan.innerText = score;
-    }
+// function incrementScore(scoreSpan) {
+//     for(let i=0;i <=10;i++){
+//     let score = parseInt(scoreSpan.innerText);
+//     if(score < 10){
+//     score +=1;
+//     scoreSpan.innerText = score;
+//     }
 
-}}
+// }}
 
-function restart(){
-    for (let i=0;i <=10;i++){
-    if(michaelScoreSpan.innerText===10){
-        alert("Congradulations Michael,You are the winner !");
-         michaelScoreSpan.innerText=0 ;
-         georgeScoreSpan.innerText=0
-    }else if(georgeScoreSpan.innerText===10){
-        alert("Congradulations George,You are the winner!")
-         michaelScoreSpan.innerText=0 
-         georgeScoreSpan.innerText=0
-    }
-}}
+// function reStart(){
+//     for (let i=0;i <=10;i++){
+//     if(michaelScoreSpan.innerText===10){
+//         alert("Congradulations Michael,You are the winner !");
+//          michaelScoreSpan.innerText=0 ;
+//          georgeScoreSpan.innerText=0
+//     }else if(georgeScoreSpan.innerText===10){
+//         alert("Congradulations George,You are the winner!")
+//          michaelScoreSpan.innerText=0 
+//          georgeScoreSpan.innerText=0
+//     }
+// }}
 
 
  function isWinner(michaelSelection,georgeSelection) {
